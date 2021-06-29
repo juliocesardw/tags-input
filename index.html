@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tags Input</title>
+
+    <!-- FUENTE GOOGLE FONTS : Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- ICONS: Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+    <!-- Mis estilos -->
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    
+    <div class="contenedor">
+        <h1>Input Tags</h1>
+
+        <form action="" class="formulario">
+            <div class="g-tags-input">
+                <label for="color"> Colores:</label>
+                <div class="tags-input">
+                    <!-- ejemplo del tag final -->
+                    <!-- <span class="tag tag-color">
+                        Amarillo
+                        <i class="fas fa-times" data-close="cerrar"></i>
+                    </span> -->
+                    <input type="text" id="color">
+                </div>
+                <input type="hidden" name="list_color" data-role="tagsinput">
+            </div>
+
+            <div class="g-tags-input">
+                <label for="paises"> Países:</label>
+                <div class="tags-input">
+                    <input type="text" id="paises">
+                </div>
+                <input type="hidden" name="list_paises" data-role="tagsinput">
+            </div>
+            <button type="button" class="btn">Enviar datos</button>
+        </form>
+
+        <div class="mostrar-datos">
+            
+        </div>
+    </div>
+
+   
+
+    <script src="app.js"></script>
+</body>
+</html>
